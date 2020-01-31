@@ -47,7 +47,7 @@ function signToken(user) {
   const secret = process.env.JWT_SECRET || "keep it secret and safe!";
 
   const options = {
-    expiresIn: `4h`
+    expiresIn: `1m`
   };
 
   return jwt.sign(payload, secret, options);
